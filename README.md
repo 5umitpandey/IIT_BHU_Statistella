@@ -24,23 +24,50 @@ An interactive Python dashboard (Plotly Dash) for exploring NBA team and player 
 
 ## Quick Start
 
-1. Install dependencies:
+### 1. Install dependencies:
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-2. Run the dashboard:
+### 2. Run the dashboard:
+
+Here are the steps formatted consistently using PowerShell code blocks:
+
+2.1: Clone the repository
 
 ```powershell
-python d:\SM\Projects\IIT_BHU_Hackathon\Statistella\dashboard.py
+git clone https://github.com/5umitpandey/IIT_BHU_Statistella.git
 ```
 
-3. Open the local URL printed in the terminal (usually `http://127.0.0.1:8050/`).
+2.2: Enter the directory
+
+```powershell
+cd IIT_BHU_Statistella/
+```
+
+2.3: Install requirements (if a requirements file exists in the root)
+
+```powershell
+pip install -r ../requirements.txt
+```
+
+2.4: Run the dashboard
+
+```powershell
+cd IIT_BHU_Statistella/Code
+```
+
+```powershell
+python dashboard.py
+```
+
+
+### 3. Open the local URL printed in the terminal (usually `http://127.0.0.1:8050/`).
 
 ## Project Structure
 
-- `dashboard.py` — main Dash app and callbacks
+- `Code/dashboard.py` — main Dash app and callbacks
 - `Processed_Data/` — CSVs consumed by the app (`team_game_stats.csv`, `player_game_stats.csv`)
 - `images/` — screenshots used in this README
 - `requirements.txt` — Python dependencies
@@ -72,8 +99,6 @@ python d:\SM\Projects\IIT_BHU_Hackathon\Statistella\dashboard.py
 - Common issues: mismatched CSV column names (e.g. `NICKNAME`, `PTS`) or team name mismatches affecting `TEAM_COLORS` keys.
 
 ## Screenshots
-
-Place screenshots in `images/` and reference them here. Example files used in this README (placeholders):
 
 - `images/dashboard_main.png`
 - `images/kpi_badges.png`
