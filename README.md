@@ -1,6 +1,6 @@
 # Statistella — NBA Evolution Dashboard
 
-![Statistella Banner](images/dashboard_main.png)
+![Statistella Banner](Images/statistella-banner.webp)
 
 An interactive Python dashboard (Plotly Dash) for exploring NBA team and player evolution (2004–2022). It includes dynamic KPIs, insight callouts, two-tone team coloring, and interactive filters.
 
