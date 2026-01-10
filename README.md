@@ -114,3 +114,29 @@ python dashboard.py
 ---
 
 If you'd like, I can add a small team color palette panel to the layout, normalize team name aliases automatically, or generate example screenshots and place them in `images/`.
+
+---
+
+<div align="center">
+
+## 👥 Team
+
+**Team Name**: ASHSUM
+<br>
+**Team Members**:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/ashir1s.png" width="150px;" alt="Ashirwad Sinha"/><br/>
+      <a href="https://github.com/ashir1s">Ashiwad Sinha</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/5umitpandey.png" width="150px;" alt="Sumit Pandey"/><br/>
+      <a href="https://github.com/5umitpandey">Sumit Pandey</a>
+    </td>
+  </tr>
+</table>
+
+</div>
+
