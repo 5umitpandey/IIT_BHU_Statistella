@@ -22,6 +22,8 @@ An interactive Python dashboard (Plotly Dash) for exploring NBA team and player 
 
 `Statistella` is a Plotly Dash dashboard that visualizes NBA team- and player-level trends from 2004 to 2022. It focuses on clear storytelling, interactive exploration (season/team/player filters), and consistent visual styling using team color pairs.
 
+![Dashboard - Main](Images/Dashboard_Main.png)
+
 ## Quick Start
 
 ### 1. Install dependencies:
@@ -80,11 +82,17 @@ python dashboard.py
 - Insight callouts and section headers for storytelling
 - Empty-state handling with friendly messages when filtered results are empty
 
+![Dynamic_Dashboard](Images/Dynamic_Eg.png)
+
+![Archetype_Players_Graph](Images/Archetype_Players_Graph.png)
+
 ## How It Works
 
 - The layout includes containers such as `kpi_container` and `badges_container` populated by the main callback `update_dashboard`.
 - The main callback builds filtered DataFrames and returns KPI children, badge children, and figures for `dcc.Graph` outputs in the same order as the callback outputs.
 - Two-tone styling uses a `TEAM_COLORS` dictionary in `dashboard.py` and helpers like `apply_two_tone(fig, primary_map, secondary_map)` to apply fills and outlines.
+
+![Special_Colours](Images/Special_Colours_Eg.png)
 
 ## Customization
 
@@ -92,28 +100,20 @@ python dashboard.py
 - Adjust `insight_box()` and `section_header()` helpers to change layout or styling.
 - Add charts or callbacks by following the existing callback pattern and returning figures in the correct order.
 
+![Interactive_Graphs](Images/Interactive_Graphs_Eg.png)
+
 ## Empty States & Troubleshooting
 
 - If a chart is blank after filtering, check the small message below the chart (e.g. `team_consistency_msg`).
 - If Dash shows a callback error, inspect the terminal running the app for a Python traceback.
 - Common issues: mismatched CSV column names (e.g. `NICKNAME`, `PTS`) or team name mismatches affecting `TEAM_COLORS` keys.
 
-## Screenshots
 
-- `images/dashboard_main.png`
-- `images/kpi_badges.png`
-- `images/two_tone_bars.png`
-
-![Dashboard - Main](images/dashboard_main.png)
 
 ## Next Steps & Contributing
 
 - Ideas: add per-game rolling averages, a color legend panel, or team name normalization for color aliases.
 - To contribute: run the dashboard locally, ensure callbacks return outputs in the correct order, and open a PR describing the change.
-
----
-
-If you'd like, I can add a small team color palette panel to the layout, normalize team name aliases automatically, or generate example screenshots and place them in `images/`.
 
 ---
 
