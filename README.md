@@ -119,10 +119,7 @@ python dashboard.py
 
 <div align="center">
 
-## 👥 Team
-
-**Team Name**: ASHSUM
-<br>
+## 👥 Team ASHSUM
 **Team Members**:
 
 <table>
